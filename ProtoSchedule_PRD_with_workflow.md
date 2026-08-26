@@ -2,7 +2,7 @@
 
 # ProtoSchedule
 ## Prototype Test Drive Scheduler
-**Volvo Group · Connected Services · Prototype Validation**
+**Connected Fleet Services · Prototype Validation Hub**
 
 | Field | Details |
 |---|---|
@@ -15,7 +15,7 @@
 
 ## 1. Executive Summary
 
-Prototype vehicles at Volvo require rigorous, varied test drives across diverse conditions — highway, off-road, gradient, cold weather, and more. Today, scheduling these test drives is managed through spreadsheets and email chains. The result: double bookings, vehicles sitting idle, test drivers waiting with no assignment, and R&D leads with no clear visibility into test coverage progress.
+Prototype vehicles require rigorous, varied test drives across diverse conditions — highway, off-road, gradient, cold weather, and more. Today, scheduling these test drives is managed through spreadsheets and email chains. The result: double bookings, vehicles sitting idle, test drivers waiting with no assignment, and R&D leads with no clear visibility into test coverage progress.
 
 ProtoSchedule is an internal web application that centralises prototype vehicle scheduling, surfaces real-time vehicle availability, and tracks test completion — giving every stakeholder a single source of truth.
 
@@ -58,7 +58,7 @@ Research was conducted over 3 weeks using three methods:
 
 ### Problem Statement
 
-> Prototype vehicle testing at Volvo is delayed and inefficient because there is no centralised, real-time system for scheduling test drives, tracking vehicle availability, or monitoring test coverage — forcing teams to rely on manual spreadsheets that are always out of date, creating conflicts, idle vehicles, and invisible gaps in the validation plan.
+> Prototype vehicle testing is delayed and inefficient because there is no centralised, real-time system for scheduling test drives, tracking vehicle availability, or monitoring test coverage — forcing teams to rely on manual spreadsheets that are always out of date, creating conflicts, idle vehicles, and invisible gaps in the validation plan.
 
 ### 3.1 How Might We (HMW) Questions
 
@@ -89,7 +89,7 @@ Research was conducted over 3 weeks using three methods:
 | Fleet management tools (Samsara, Fleetio) | Commercial fleet tracking + scheduling | Built for production fleets, not prototype R&D workflows; no test coverage tracking |
 | Jira / Asana | Task & project tracking | Not built for resource (vehicle) scheduling; no real-time availability view |
 | Custom spreadsheets (current) | Manual tracking | No real-time sync, no conflict detection, always outdated, no coverage view |
-| VEMS / internal Volvo tools | Vehicle lifecycle tracking | Tracks build milestones, not test drive scheduling |
+| Internal PLM / lifecycle tools | Vehicle lifecycle tracking | Tracks build milestones, not test drive scheduling |
 
 ### 4.2 Key Insight from Market Research
 
@@ -98,14 +98,14 @@ No off-the-shelf tool addresses the specific intersection of: prototype vehicle 
 ### Build vs. Buy Decision
 
 - **Buy:** No tool covers all 3 needs (booking + status + coverage tracking) without heavy customisation
-- **Build:** Core scheduling + status logic is well-understood; test coverage tracking is uniquely Volvo-specific
+- **Build:** Core scheduling + status logic is well-understood; test coverage tracking is uniquely proving-ground specific
 - **Decision:** Build MVP internally; evaluate commercial tools again at scale (>50 prototype vehicles)
 
 ## 5. Solution Overview
 
 ### 5.1 Product Vision
 
-ProtoSchedule is the single source of truth for prototype vehicle availability and test drive scheduling at Volvo — giving every team real-time visibility, eliminating conflicts, and making test coverage gaps immediately visible.
+ProtoSchedule is the single source of truth for prototype vehicle availability and test drive scheduling — giving every team real-time visibility, eliminating conflicts, and making test coverage gaps immediately visible.
 
 ### 5.2 Core Features — MVP
 
@@ -122,7 +122,7 @@ ProtoSchedule is the single source of truth for prototype vehicle availability a
 
 • Mobile app (web-responsive only for MVP)
 
-• Integration with Volvo HR systems for driver scheduling
+• Integration with enterprise HR systems for driver scheduling
 
 • Automated route planning or GPS tracking during test drives
 
@@ -298,4 +298,4 @@ Features were prioritised using a 2x2 Impact vs. Effort matrix, scored with inpu
 
 ---
 
-ProtoSchedule PRD v1.0  •  [Your Name]  •  [your.email@email.com]  •  Volvo Group, Connected Services
+ProtoSchedule PRD v1.0  •  [Your Name]  •  [your.email@email.com]  •  Connected Fleet Services Team

@@ -631,7 +631,7 @@ export const Vehicle3DViewer: React.FC<Vehicle3DViewerProps> = ({
                 </span>
               </div>
               <p className="text-[11px] text-slate-400 mt-0.5">
-                Volvo 5D Digital Twin Diagnostic Inspector · {vehicle.depotLocation}
+                5D Digital Twin Diagnostic Inspector · {vehicle.depotLocation}
               </p>
             </div>
           </div>

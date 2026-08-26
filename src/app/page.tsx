@@ -190,7 +190,7 @@ export default function HomePage() {
       <footer className="mt-12 border-t border-slate-800/80 bg-slate-950 py-6 text-center text-xs text-slate-500">
         <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
           <div className="flex items-center space-x-2">
-            <span className="font-extrabold text-slate-300 tracking-wider">VOLVO GROUP</span>
+            <span className="font-extrabold text-slate-300 tracking-wider">PROTOSCHEDULE</span>
             <span>·</span>
             <span>Connected Services · Prototype Validation Hub</span>
           </div>

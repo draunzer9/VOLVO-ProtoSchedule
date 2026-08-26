@@ -80,7 +80,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBookingModal }) => {
 
   return (
     <header className="sticky top-0 z-40 bg-[#0B111E]/95 backdrop-blur-md border-b border-slate-800/80 shadow-2xl">
-      {/* Top Banner with Volvo Branding & Persona Switcher */}
+      {/* Top Banner with Branding & Persona Switcher */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 border-b border-slate-800/50">
           {/* Logo & Product Title */}
@@ -95,8 +95,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBookingModal }) => {
             </div>
             <div>
               <div className="flex items-center space-x-2">
-                <span className="font-extrabold tracking-wider text-white text-base uppercase">VOLVO</span>
-                <span className="text-cyan-400 font-light text-base">| ProtoSchedule</span>
+                <span className="font-extrabold tracking-wider text-white text-base uppercase">PROTOSCHEDULE</span>
+                <span className="text-cyan-400 font-light text-base">| Fleet Hub</span>
                 <span className="text-[10px] font-mono uppercase px-1.5 py-0.5 rounded bg-cyan-950/80 text-cyan-300 border border-cyan-800/60 font-semibold">
                   MVP v1.0
                 </span>

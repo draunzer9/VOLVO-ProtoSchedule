@@ -160,14 +160,14 @@ interface ProtoScheduleContextType {
 const ProtoScheduleContext = createContext<ProtoScheduleContextType | undefined>(undefined);
 
 const STORAGE_KEYS = {
-  VEHICLES: 'volvo_proto_vehicles_v1',
-  BOOKINGS: 'volvo_proto_bookings_v1',
-  COVERAGE: 'volvo_proto_coverage_v1',
-  CONFLICTS: 'volvo_proto_conflicts_v1',
-  WORKSHOP: 'volvo_proto_workshop_v1',
-  REQUISITIONS: 'volvo_proto_requisitions_v1',
-  NOTIFICATIONS: 'volvo_proto_notifications_v1',
-  ROLE: 'volvo_proto_role_v1',
+  VEHICLES: 'proto_vehicles_v1',
+  BOOKINGS: 'proto_bookings_v1',
+  COVERAGE: 'proto_coverage_v1',
+  CONFLICTS: 'proto_conflicts_v1',
+  WORKSHOP: 'proto_workshop_v1',
+  REQUISITIONS: 'proto_requisitions_v1',
+  NOTIFICATIONS: 'proto_notifications_v1',
+  ROLE: 'proto_role_v1',
 };
 
 export const ProtoScheduleProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
@@ -194,7 +194,7 @@ export const ProtoScheduleProvider: React.FC<{ children: ReactNode }> = ({ child
   useEffect(() => {
     try {
       if (typeof window !== 'undefined' && 'BroadcastChannel' in window) {
-        const bc = new BroadcastChannel('volvo_protoschedule_live_sync');
+        const bc = new BroadcastChannel('protoschedule_live_sync');
         broadcastRef.current = bc;
 
         bc.onmessage = (event) => {
@@ -1456,7 +1456,7 @@ export const ProtoScheduleProvider: React.FC<{ children: ReactNode }> = ({ child
     const encodedUri = encodeURI(csvContent);
     const link = document.createElement('a');
     link.setAttribute('href', encodedUri);
-    link.setAttribute('download', `Volvo_ProtoSchedule_Test_Coverage_${new Date().toISOString().split('T')[0]}.csv`);
+    link.setAttribute('download', `ProtoSchedule_Test_Coverage_${new Date().toISOString().split('T')[0]}.csv`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -1484,7 +1484,7 @@ export const ProtoScheduleProvider: React.FC<{ children: ReactNode }> = ({ child
     const encodedUri = encodeURI(csvContent);
     const link = document.createElement('a');
     link.setAttribute('href', encodedUri);
-    link.setAttribute('download', `Volvo_ProtoSchedule_Fleet_Utilisation_${new Date().toISOString().split('T')[0]}.csv`);
+    link.setAttribute('download', `ProtoSchedule_Fleet_Utilisation_${new Date().toISOString().split('T')[0]}.csv`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

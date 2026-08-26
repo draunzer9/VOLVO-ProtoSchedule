@@ -1,7 +1,7 @@
-# Volvo ProtoSchedule — Prototype Test Drive Scheduler
-**Volvo Group · Connected Services · Prototype Validation Hub**
+# ProtoSchedule — Prototype Test Drive Scheduler
+**Connected Fleet Services · Prototype Validation Hub**
 
-ProtoSchedule is a real-time web application built for Volvo Group to centralise prototype vehicle scheduling, surface vehicle availability across test depots (Hällered Proving Ground, Kiruna Arctic Test Facility, Gothenburg HQ, Arizona Proving Ground), automate conflict detection, and track test coverage matrix completion.
+ProtoSchedule is a real-time web application built to centralise prototype vehicle scheduling, surface vehicle availability across test depots (Hällered Proving Ground, Kiruna Arctic Test Facility, Gothenburg HQ, Arizona Proving Ground), automate conflict detection, and track test coverage matrix completion.
 
 ---
 
@@ -18,14 +18,14 @@ ProtoSchedule is a real-time web application built for Volvo Group to centralise
    - 1-click resolution actions: **Auto-Reassign to peer prototype**, **Reschedule slot**, **Cancel & free**, or **Lead Override**.
 
 3. **2D Interactive Test Coverage Matrix (PRD US-04)**:
-   - 8 Standard Volvo test scenarios (Arctic Cold, 15% Gradient, Highway Aero, Rough Terrain, Wet Skidpad, High Altitude, Battery MCS Stress, Autonomous L3 Sensors) mapped across all prototype models.
+   - 8 Standard validation test scenarios (Arctic Cold, 15% Gradient, Highway Aero, Rough Terrain, Wet Skidpad, High Altitude, Battery MCS Stress, Autonomous L3 Sensors) mapped across all prototype models.
    - Milestone sign-offs and one-click CSV export.
 
 4. **Interactive 7-Step Workflow Simulator**:
    - End-to-end walkthrough demonstrating PRD Section 6.2 (Lead plans -> Workshop preps -> Driver drives -> Driver reports -> Tech inspects -> Lead signs off).
 
-5. **Volvo Nordic Industrial Design System**:
-   - Crisp, high-contrast dark theme with Volvo Blue accents, responsive UI, glassmorphic headers, and live Gothenburg time clock.
+5. **Nordic Precision Industrial Design System**:
+   - Crisp, high-contrast dark theme with Oceanic Blue accents, responsive UI, glassmorphic headers, and live proving ground time clock.
 
 ---
 
@@ -36,7 +36,7 @@ ProtoSchedule is built with Next.js 14 (App Router) and is 100% Vercel-ready wit
 ### Option A: Deploy via GitHub / Vercel Dashboard
 1. Push this repository to GitHub or GitLab.
 2. Go to [Vercel Dashboard](https://vercel.com/new).
-3. Import the `VOLVO_ProtoSchedule` repository.
+3. Import the `ProtoSchedule` repository.
 4. Framework Preset: **Next.js**.
 5. Click **Deploy**.
 

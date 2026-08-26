@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        volvo: {
+        proto: {
           dark: "#0B111E",
           card: "#131E31",
           cardHover: "#182740",

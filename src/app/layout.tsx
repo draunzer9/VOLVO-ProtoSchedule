@@ -3,8 +3,8 @@ import "./globals.css";
 import { ProtoScheduleProvider } from "@/context/ProtoScheduleContext";
 
 export const metadata: Metadata = {
-  title: "Volvo ProtoSchedule | Prototype Test Drive Scheduler",
-  description: "Volvo Group Connected Services - Prototype Vehicle Scheduling & Validation Coverage Hub",
+  title: "ProtoSchedule | Prototype Test Drive Scheduler",
+  description: "Connected Fleet Services - Prototype Vehicle Scheduling & Validation Coverage Hub",
 };
 
 export default function RootLayout({

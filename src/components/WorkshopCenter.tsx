@@ -83,7 +83,7 @@ export const WorkshopCenter: React.FC = () => {
   const quickPartPresets = [
     {
       name: 'Brembo High-Temp Track Caliper & Rotor Kit',
-      number: 'VOLVO-OEM-BRK-992-FC',
+      number: 'OEM-BRK-992-FC',
       cat: 'BRAKES' as const,
       cost: 1850,
       lead: 2,
@@ -92,7 +92,7 @@ export const WorkshopCenter: React.FC = () => {
     },
     {
       name: 'Luminar Iris 1550nm LiDAR Sensor Pod Bracket V2',
-      number: 'VOLVO-AUTON-LID-1550',
+      number: 'OEM-AUTON-LID-1550',
       cat: 'SENSORS_ADAS' as const,
       cost: 3200,
       lead: 4,
@@ -101,7 +101,7 @@ export const WorkshopCenter: React.FC = () => {
     },
     {
       name: '800V High-Voltage Pyro-Fuse Module & Isolation Contactor',
-      number: 'VOLVO-HV-PYRO-800V',
+      number: 'OEM-HV-PYRO-800V',
       cat: 'POWERTRAIN_HV' as const,
       cost: 2100,
       lead: 3,
@@ -110,7 +110,7 @@ export const WorkshopCenter: React.FC = () => {
     },
     {
       name: 'Heavy-Duty Steering Tie-Rod End Ball Joints',
-      number: 'VOLVO-STEER-TR-440',
+      number: 'OEM-STEER-TR-440',
       cat: 'SUSPENSION_STEERING' as const,
       cost: 650,
       lead: 1,
@@ -158,7 +158,7 @@ export const WorkshopCenter: React.FC = () => {
       vehicleCode: v.code,
       vehicleName: v.name,
       partName: partName || 'Custom Prototype Replacement Part',
-      partNumber: partNumber || 'VOLVO-PROTO-PART-OEM',
+      partNumber: partNumber || 'OEM-PROTO-PART',
       category: partCategory,
       estimatedCostEur: partCost,
       leadTimeHours: partLeadTime,
@@ -506,7 +506,7 @@ export const WorkshopCenter: React.FC = () => {
                     <ShieldCheck className="w-4 h-4 text-emerald-400" />
                     <span>Pre-Flight Technical Checklist (Lars)</span>
                   </h4>
-                  <span className="text-[10px] text-slate-400 font-mono">Volvo Safety Standard ISO-26262</span>
+                  <span className="text-[10px] text-slate-400 font-mono">Functional Safety ISO-26262</span>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
@@ -614,7 +614,7 @@ export const WorkshopCenter: React.FC = () => {
             {/* Quick Presets */}
             <div>
               <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider block mb-1.5">
-                Quick Volvo OEM Presets:
+                Quick OEM Presets:
               </span>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
                 {quickPartPresets.map((preset, idx) => (
@@ -691,7 +691,7 @@ export const WorkshopCenter: React.FC = () => {
                     type="text"
                     value={partNumber}
                     onChange={(e) => setPartNumber(e.target.value)}
-                    placeholder="e.g. VOLVO-OEM-BRK-992"
+                    placeholder="e.g. OEM-BRK-992"
                     className="w-full bg-slate-950 border border-slate-700 rounded-lg p-2 text-xs text-white font-mono"
                     required
                   />

@@ -197,7 +197,7 @@ export const AnalyticsCharts: React.FC = () => {
                 Complete vs Scheduled vs Not Started across all 6 prototype vehicles.
               </p>
             </div>
-            <span className="text-xs font-mono text-cyan-400">8 Standard Volvo Conditions</span>
+            <span className="text-xs font-mono text-cyan-400">8 Standard Validation Scenarios</span>
           </div>
 
           <div className="h-64 w-full">
